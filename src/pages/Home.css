@@ -1,0 +1,115 @@
+.home {
+  padding-bottom: 32px;
+}
+
+.hero {
+  text-align: center;
+  padding: 48px 0 32px;
+}
+
+.hero-badge {
+  display: inline-block;
+  padding: 6px 18px;
+  background: var(--pink-soft);
+  color: #d4608a;
+  border-radius: 999px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.gradient {
+  background: linear-gradient(120deg, var(--pink-deep), #b89fff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-sub {
+  color: var(--text-soft);
+  font-size: 16px;
+  line-height: 1.9;
+  margin-bottom: 28px;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 15px;
+  transition: all 0.2s;
+}
+
+.btn-pink {
+  background: linear-gradient(120deg, var(--pink-deep), #ff9fbf);
+  color: white;
+  box-shadow: 0 6px 16px rgba(255, 143, 171, 0.4);
+}
+
+.btn-pink:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(255, 143, 171, 0.5);
+  color: white;
+}
+
+.btn-ghost {
+  background: white;
+  color: var(--pink-deep);
+  border: 2px solid var(--pink-soft);
+}
+
+.btn-ghost:hover {
+  border-color: var(--pink-deep);
+}
+
+.quick-tags {
+  text-align: center;
+  margin: 24px 0 48px;
+}
+
+.section {
+  margin-top: 48px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.preview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.preview-card h3 {
+  font-size: 17px;
+  margin: 10px 0 8px;
+}
+
+.preview-card p {
+  font-size: 14px;
+  color: var(--text-soft);
+}
+
+.preview-emoji {
+  font-size: 36px;
+}
+
+.link-more {
+  font-weight: 600;
+}

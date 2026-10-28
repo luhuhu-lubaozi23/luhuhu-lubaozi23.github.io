@@ -1,0 +1,22 @@
+.post-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.post-card h3 {
+  font-size: 18px;
+  margin: 6px 0 10px;
+}
+
+.post-card p {
+  font-size: 14px;
+  color: var(--text-soft);
+  margin-bottom: 12px;
+}
+
+.post-date {
+  font-size: 13px;
+  color: var(--pink-deep);
+  font-weight: 600;
+}

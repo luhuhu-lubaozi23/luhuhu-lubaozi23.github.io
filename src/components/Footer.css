@@ -1,0 +1,22 @@
+.footer {
+  padding: 32px 0;
+  text-align: center;
+  color: var(--text-soft);
+  font-size: 14px;
+  border-top: 1px dashed var(--pink-soft);
+}
+
+.footer-links {
+  margin-top: 6px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer-links a {
+  color: var(--text-soft);
+}
+
+.footer-links a:hover {
+  color: var(--pink-deep);
+}

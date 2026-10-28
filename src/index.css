@@ -1,0 +1,118 @@
+/* ===== 马卡龙少女主题 ===== */
+:root {
+  --bg: #fff7f9;
+  --bg-soft: #fff0f5;
+  --pink: #ffb6c9;
+  --pink-deep: #ff8fab;
+  --pink-soft: #ffd6e4;
+  --blue: #b8dfff;
+  --blue-soft: #dcefff;
+  --purple: #e0cfff;
+  --purple-soft: #efe6ff;
+  --yellow: #ffe9a8;
+  --yellow-soft: #fff4d1;
+  --green: #c8e6c9;
+  --green-soft: #e4f4e4;
+  --text: #5a4a5e;
+  --text-soft: #9a8a9e;
+  --card: #ffffff;
+  --shadow: 0 8px 24px rgba(255, 143, 171, 0.18);
+  --shadow-hover: 0 12px 32px rgba(255, 143, 171, 0.28);
+  --radius: 20px;
+  --radius-sm: 12px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  color: var(--text);
+  font-family: "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB",
+    "Segoe UI", system-ui, -apple-system, sans-serif;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-image:
+    radial-gradient(var(--pink-soft) 1.5px, transparent 1.5px),
+    radial-gradient(var(--blue-soft) 1.5px, transparent 1.5px);
+  background-size: 40px 40px;
+  background-position: 0 0, 20px 20px;
+  background-color: var(--bg);
+  min-height: 100vh;
+}
+
+a {
+  color: var(--pink-deep);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover { color: #ff6b95; }
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 24px;
+  width: 100%;
+}
+
+.card {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 28px;
+  box-shadow: var(--shadow);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+.pill {
+  display: inline-block;
+  padding: 4px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 500;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.pill-pink { background: var(--pink-soft); color: #d4608a; }
+.pill-blue { background: var(--blue-soft); color: #4a7fb8; }
+.pill-purple { background: var(--purple-soft); color: #8a6bbf; }
+.pill-yellow { background: var(--yellow-soft); color: #b8862e; }
+.pill-green { background: var(--green-soft); color: #4a8a4e; }
+
+.page-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  background: linear-gradient(120deg, var(--pink-deep), #b89fff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.page-subtitle {
+  color: var(--text-soft);
+  margin-bottom: 32px;
+  font-size: 15px;
+}
+
+main {
+  flex: 1;
+  padding: 48px 0;
+}
